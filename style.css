@@ -1,4 +1,7 @@
-.about-me, .contact-me{
+body{
+    /* background-image: url(https://previews.123rf.com/images/ookasan/ookasan1608/ookasan160800062/60859660-vintage-or-grungy-white-background-cement.jpg); */
+
+}.about-me, .contact-me{
     border: 1px, solid, gray;
     background-color: whitesmoke;
     padding: 15px;
@@ -9,4 +12,9 @@ footer{
     color: white;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
 }
