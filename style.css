@@ -1,0 +1,12 @@
+.about-me{
+    border: 1px, solid, gray;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+footer{
+    background-color:gray;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
