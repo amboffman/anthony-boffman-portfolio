@@ -1,10 +1,25 @@
 body{
     background-image: url(https://www.positivespin360.com/wp-content/uploads/2019/02/royal-blue-background-wallpaper-8721852-2.jpg);
 
-}.about-me, .contact-me{
+}.about-me, .portfolio, .contact-me{
     border: 1px, solid, gray;
     background-color: whitesmoke;
     padding: 15px;
+}
+
+.project{
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    width: 100%;
+    color: white;
 }
 
 footer{
@@ -12,7 +27,7 @@ footer{
     color: white;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
