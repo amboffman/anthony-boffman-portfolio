@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity = "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin = "anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <title> Home </title>
+    <script src = "https://www.google.com/recaptcha/api.js" async defer> </script>
 </head>
 <header>
 
     <!-- header & navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">Anthony Boffman</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class = "navbar navbar-expand-md navbar-dark bg-primary">
+        <div class = "container">
+            <a class = "navbar-brand" href = "./index.html">Anthony Boffman</a>
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarNav"
+                aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
+                <span class = "navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="./index.html">Home <span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <div class = "collapse navbar-collapse" id = "navbarNav">
+                <div class = "navbar-nav">
+                    <a class = "nav-item nav-link active" href = "./index.html">Home<span
+                            class = "sr-only">(current)</span></a>
+                    <a class = "nav-item nav-link" href = "portfolio.html">Portfolio</a>
+                    <a class = "nav-item nav-link" href = "contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -34,15 +35,15 @@
 <body>
 
     <!-- about me section -->
-    <section class="container-fluid mb-3" id="about-me">
-        <div class="container">
-            <div class="flex-column media flex-md-row">
-                <img class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
-                    src="assets/anthony-photo.jpg" alt="Photo of Anthony">
-                <div class="media-body text-center text-md-left">
-                    <div class="intro">Hello, my name is</div>
-                    <h2 class="mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
-                    <div class="mb-3">
+    <section class = "container-fluid mb-3" id = "about-me">
+        <div class = "container">
+            <div class = "flex-column media flex-md-row">
+                <img class = "img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
+                    src = "assets/anthony-photo.jpg" alt = "Photo of Anthony">
+                <div class = "media-body text-center text-md-left">
+                    <div class = "intro">Hello, my name is</div>
+                    <h2 class = "mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
+                    <div class = "mb-3">
                         Full Stack Web Developer utilizing
                         JavaScript,
                         CSS, React.js, and responsive web design. Known for my work ethic, team collaboration and
@@ -52,6 +53,7 @@
                         and
                         constructive collaboration.
                     </div>
+                    <div class = "contact-info"> Email: amarrokalboffman@gmail.com | Phone: 619.985.1215</div>
                 </div>
             </div>
         </div>
@@ -103,7 +105,17 @@
     <!-- contact section -->
     <section class="container-fluid" id="contact-me">
         <h3 class="text-center font-weight-bold mt-3 mb-3">Let's Connect!</h3>
-        <form>
+        <div class="d-flex">
+            <ul class="list-inline mx-auto justify-content-center">
+                <li class="list-inline-item"> <img class="icon" id="github" src="assets/github-icon.png"
+                        href="https://github.com/amboffman" target="_blank"> </li>
+                <li class="list-inline-item"> <img class="icon" id="linkedin" src="assets/linkedin-icon.png"
+                        href="https://www.linkedin.com/in/anthonyboffman/" target="_blank"> </li>
+
+            </ul>
+        </div>
+
+        <!-- <form>
             <div class="form-row">
                 <div class="col">
                     <div class="form-group">
@@ -123,8 +135,10 @@
                 <label for="Message">Message</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <div class="g-recaptcha" data-sitekey="6LeIDOYUAAAAAO_Pehpu7Gr3nj2HuV3qCtTKYac3"></div>
+            <br/>
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </form> -->
     </section>
 
     <!-- <footer>

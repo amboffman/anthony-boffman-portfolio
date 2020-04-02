@@ -3,10 +3,18 @@ body{
 
 }
 
+.icon{
+    max-width: 70px;
+    max-height: 70px;
+}
 .bio-image{
     max-width: 240px;
 }
 
+.contact-info{
+    font-size: 14px;
+    font-weight: 100;
+}
 .intro{
     font-size: 20px;
     font-weight: 500;
