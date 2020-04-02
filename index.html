@@ -12,61 +12,93 @@
 <header>
 
     <!-- header & navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5"
-                    style="background-color: darkblue; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">
-                    <a class="navbar-brand" style="color: white" href="#">Anthony Boffman</a>
-                </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-3">
-                    <div class="navbar-expand">
-                        <ul class="navbar-nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-item nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+            <a class="navbar-brand" href="./index.html">Anthony Boffman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="./index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
                 </div>
             </div>
+        </div>
     </nav>
 </header>
 
 <body>
 
     <!-- about me section -->
-    <div class="container-md about-me mt-3 mb-3">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>About Me</h1>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="img-fluid media mb-3 mr-3 ml-3" src="assets/anthony-photo.jpg" alt="Photo of Anthony">
-            </div>
-            <div class="col-sm-9 media-body ml-3">
-                Full Stack Web Developer with four years of digital marketing experience and a Bachelor’s degree from
-                Pepperdine University. Engineering applications at the UCSD Extension program, utilizing JavaScript,
-                CSS, React.js, and responsive web design. Known for my work ethic, team collaboration and adaptability.
-                Four years of digital marketing experience reinforces my passion for research, product development, and
-                constructive collaboration.
-
+    <div class="container-fluid about-me mb-3">
+        <div class="container">
+            <div class="flex-column media flex-md-row">
+                <img class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
+                    src="assets/anthony-photo.jpg" alt="Photo of Anthony">
+                <div class="media-body text-center text-md-left">
+                    <div class="intro">Hello, my name is</div>
+                    <h2 class="mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
+                    <div class="mb-3">
+                        Full Stack Web Developer utilizing
+                        JavaScript,
+                        CSS, React.js, and responsive web design. Known for my work ethic, team collaboration and
+                        adaptability.
+                        Four years of digital marketing experience reinforces my passion for research, product
+                        development,
+                        and
+                        constructive collaboration.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
+
+    <!-- portfolio section -->
+
+    <div class="container portfolio">
+        <h3 class="text-center font-weight-bold mt-3 mb-3">Featured Projects</h3>
+        <hr>
+        <div class="projects row mb-3">
+            <div class="col-12 col-lg-4">
+                <div class="project card">
+                    <img class="card-img-top project-photo" src="https://picsum.photos/350/350" alt="project-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Moodies</h5>
+                        <p class="card-text">An application that recommends local restaurants based on your current mood.</p>
+                        <a href = "https://github.com/sylhuynh/moodies" class="btn btn-primary"> View on Github </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="project card">
+                    <img class="card-img-top project-photo" src="https://picsum.photos/350/350" alt="project-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Password Generator</h5>
+                        <p class="card-text">Generates a random password based on the selected criteria.</p>
+                        <a href = "https://github.com/amboffman/password-generator" class="btn btn-primary"> View on Github </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="project card">
+                    <img class="card-img-top project-photo" src="https://picsum.photos/350/350" alt="project-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">Pulls upcoming weather based on the user's city entry.</p>
+                        <a href = "https://github.com/amboffman/weather-dashboard" class="btn btn-primary"> View on Github </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
         <small>Site made by Anthony Boffman</small>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
