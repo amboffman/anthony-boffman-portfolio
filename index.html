@@ -34,7 +34,7 @@
 <body>
 
     <!-- about me section -->
-    <div class="container-fluid about-me mb-3">
+    <section class="container-fluid mb-3" id="about-me">
         <div class="container">
             <div class="flex-column media flex-md-row">
                 <img class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
@@ -55,11 +55,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- portfolio section -->
 
-    <div class="container portfolio">
+    <section class="container" id="portfolio">
         <h3 class="text-center font-weight-bold mt-3 mb-3">Featured Projects</h3>
         <hr>
         <div class="projects row mb-3">
@@ -68,8 +68,10 @@
                     <img class="card-img-top project-photo" src="assets/moodies.png" alt="project-1">
                     <div class="card-body">
                         <h5 class="card-title">Moodies</h5>
-                        <p class="card-text">An application that recommends local restaurants based on your current mood.</p>
-                        <a href = "https://github.com/sylhuynh/moodies" class="btn btn-primary" target="_blank"> View on Github </a>
+                        <p class="card-text">An application that recommends local restaurants based on your current
+                            mood.</p>
+                        <a href="https://github.com/sylhuynh/moodies" class="btn btn-primary" target="_blank"> View on
+                            Github </a>
                     </div>
                 </div>
             </div>
@@ -79,7 +81,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Password Generator</h5>
                         <p class="card-text">Generates a random password based on the selected criteria.</p>
-                        <a href = "https://github.com/amboffman/password-generator" class="btn btn-primary" target="_blank"> View on Github </a>
+                        <a href="https://github.com/amboffman/password-generator" class="btn btn-primary"
+                            target="_blank"> View on Github </a>
                     </div>
                 </div>
             </div>
@@ -89,12 +92,40 @@
                     <div class="card-body">
                         <h5 class="card-title">Weather Dashboard</h5>
                         <p class="card-text">Pulls upcoming weather based on the user's city entry.</p>
-                        <a href = "https://github.com/amboffman/weather-dashboard" class="btn btn-primary" target="_blank"> View on Github </a>
+                        <a href="https://github.com/amboffman/weather-dashboard" class="btn btn-primary"
+                            target="_blank"> View on Github </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="container-fluid" id="contact-me">
+        <h3 class="text-center font-weight-bold mt-3 mb-3">Let's Connect!</h3>
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                            placeholder="Enter name">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Email Address">Email</label>
+                        <input type="email" class="form-control" id="exampleEmail" placeholder="Email Address">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
 
     <!-- <footer>
         <small>Site made by Anthony Boffman</small>
