@@ -1,2 +1,3 @@
 # anthony-boffman-portfolio
-A portfolio of Anthony Boffman's work.
+A personal portfolio of Anthony Boffman's projects.
+
