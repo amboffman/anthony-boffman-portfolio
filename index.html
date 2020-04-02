@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity = "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin = "anonymous">
-    <link rel = "stylesheet" href = "style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title> Home </title>
-    <script src = "https://www.google.com/recaptcha/api.js" async defer> </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
 </head>
 <header>
 
     <!-- header & navigation -->
-    <nav class = "navbar navbar-expand-md navbar-dark bg-primary">
-        <div class = "container">
-            <a class = "navbar-brand" href = "./index.html">Anthony Boffman</a>
-            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarNav"
-                aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
-                <span class = "navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Anthony Boffman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class = "collapse navbar-collapse" id = "navbarNav">
-                <div class = "navbar-nav">
-                    <a class = "nav-item nav-link active" href = "./index.html">Home<span
-                            class = "sr-only">(current)</span></a>
-                    <a class = "nav-item nav-link" href = "portfolio.html">Portfolio</a>
-                    <a class = "nav-item nav-link" href = "contact.html">Contact</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="./index.html">Home<span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -35,15 +35,15 @@
 <body>
 
     <!-- about me section -->
-    <section class = "container-fluid mb-3" id = "about-me">
-        <div class = "container">
-            <div class = "flex-column media flex-md-row">
-                <img class = "img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
-                    src = "assets/anthony-photo.jpg" alt = "Photo of Anthony">
-                <div class = "media-body text-center text-md-left">
-                    <div class = "intro">Hello, my name is</div>
-                    <h2 class = "mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
-                    <div class = "mb-3">
+    <section class="container-fluid mb-3" id="about-me">
+        <div class="container">
+            <div class="flex-column media flex-md-row">
+                <img class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
+                    src="assets/anthony-photo.jpg" alt="Photo of Anthony">
+                <div class="media-body text-center text-md-left">
+                    <div class="intro">Hello, my name is</div>
+                    <h2 class="mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
+                    <div class="mb-3">
                         Full Stack Web Developer utilizing
                         JavaScript,
                         CSS, React.js, and responsive web design. Known for my work ethic, team collaboration and
@@ -53,7 +53,7 @@
                         and
                         constructive collaboration.
                     </div>
-                    <div class = "contact-info"> Email: amarrokalboffman@gmail.com | Phone: 619.985.1215</div>
+                    <div class="contact-info"> Email: amarrokalboffman@gmail.com | Phone: 619.985.1215</div>
                 </div>
             </div>
         </div>
@@ -62,6 +62,7 @@
     <!-- portfolio section -->
 
     <section class="container" id="portfolio">
+        <a name="portfolio"></a>
         <h3 class="text-center font-weight-bold mt-3 mb-3">Featured Projects</h3>
         <hr>
         <div class="projects row mb-3">
@@ -69,7 +70,7 @@
                 <div class="project card mb-3">
                     <img class="card-img-top project-photo" src="assets/moodies.png" alt="project-1">
                     <div class="card-body">
-                        <h5 class="card-title">Moodies</h5>
+                        <h5 class="card-title"><a href ="https://sylhuynh.github.io/moodies/" target = "_blank"></a>Moodies</a></h5>
                         <p class="card-text">An application that recommends local restaurants based on your current
                             mood.</p>
                         <a href="https://github.com/sylhuynh/moodies" class="btn btn-primary" target="_blank"> View on
@@ -81,7 +82,7 @@
                 <div class="project card mb-3">
                     <img class="card-img-top project-photo" src="assets/password-generator.png" alt="project-2">
                     <div class="card-body">
-                        <h5 class="card-title">Password Generator</h5>
+                        <h5 class="card-title"><a href ="https://amboffman.github.io/password-generator/" target = "_blank"></a>Password Generator</a></h5>
                         <p class="card-text">Generates a random password based on the selected criteria.</p>
                         <a href="https://github.com/amboffman/password-generator" class="btn btn-primary"
                             target="_blank"> View on Github </a>
@@ -92,7 +93,7 @@
                 <div class="project card mb-3">
                     <img class="card-img-top project-photo" src="assets/weather-dashboard.png" alt="project-3">
                     <div class="card-body">
-                        <h5 class="card-title">Weather Dashboard</h5>
+                        <h5 class="card-title"> <a href ="https://amboffman.github.io/weather-dashboard/" target = "_blank">Weather Dashboard</a></h5>
                         <p class="card-text">Pulls upcoming weather based on the user's city entry.</p>
                         <a href="https://github.com/amboffman/weather-dashboard" class="btn btn-primary"
                             target="_blank"> View on Github </a>
@@ -104,14 +105,19 @@
 
     <!-- contact section -->
     <section class="container-fluid" id="contact-me">
+        <a name="contact"></a>
         <h3 class="text-center font-weight-bold mt-3 mb-3">Let's Connect!</h3>
+        <div class="row justify-content-center">
+            <a href="https://github.com/amboffman/password-generator" class="btn btn-light" href ="assets/documents/Anthony-Boffman-Resume.pdf" target="_blank"> View Resume
+            </a>
+        </div>
+        <br>
         <div class="d-flex">
-            <ul class="list-inline mx-auto justify-content-center">
+            <ul class="list-inline mx-auto">
                 <li class="list-inline-item"> <img class="icon" id="github" src="assets/github-icon.png"
                         href="https://github.com/amboffman" target="_blank"> </li>
                 <li class="list-inline-item"> <img class="icon" id="linkedin" src="assets/linkedin-icon.png"
                         href="https://www.linkedin.com/in/anthonyboffman/" target="_blank"> </li>
-
             </ul>
         </div>
 
