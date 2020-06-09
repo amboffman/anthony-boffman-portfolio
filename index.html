@@ -1,213 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-  <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> Home </title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
+</head>
+<header>
+
     <!-- header & navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">Anthony Boffman</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="./index.html"
-              >Home<span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Anthony Boffman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="./index.html">Home<span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
 
-  <body>
+<body>
+
     <!-- about me section -->
     <section class="container-fluid mb-3" id="about-me">
-      <div class="container">
-        <div class="flex-column media flex-md-row">
-          <img
-            class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
-            src="assets/anthony-photo.jpg"
-            alt="Photo of Anthony"
-          />
-          <div class="media-body text-center text-md-left">
-            <div class="intro">Hello, my name is</div>
-            <h2 class="mt-0 display-3 font-weight-bold">Anthony Boffman</h2>
-            <div class="mb-3">
-                Software Developer with a Full Stack Web Development certification (MERN Stack) from the University of California, San Diego. Proficient in agile development for front and back-end development. Blending four years of digital marketing experience with hands-on technical prowess to provide a unique perspective for programming with search engine optimization, user experience (UX),and current web trends in mind.
+        <div class="container">
+            <div class="flex-column media flex-md-row">
+                <img class="img-fluid mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto bio-image"
+                    src="assets/anthony-photo.jpg" alt="Photo of Anthony">
+                <div class="media-body text-center text-md-left">
+                    <div class="intro">Hello, my name is</div>
+                    <h2 class="mt-0 display-3 font-weight-bold"> Anthony Boffman</h2>
+                    <div class="mb-3">
+                        Full Stack Web Developer utilizing
+                        JavaScript,
+                        CSS, React.js, and responsive web design. Known for my work ethic, team collaboration and
+                        adaptability.
+                        Four years of digital marketing experience reinforces my passion for research, product
+                        development,
+                        and
+                        constructive collaboration.
+                    </div>
+                    <div class="contact-info"> Email: amarrokalboffman@gmail.com | Phone: 619.985.1215</div>
+                </div>
             </div>
-            <div class="contact-info">
-              Email: amarrokalboffman@gmail.com | Phone: 619.985.1215
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- portfolio section -->
 
     <section class="container" id="portfolio">
-      <a name="portfolio"></a>
-      <h3 class="text-center font-weight-bold mt-3 mb-3">Featured Projects</h3>
-      <hr />
-      <div class="projects row mb-3">
-        <div class="col-12 col-lg-4">
-          <div class="project card mb-3">
-            <img
-              class="card-img-top project-photo"
-              src="assets/gamersaurus.png"
-              alt="project-3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="https://gamersaurus.herokuapp.com/" target="_blank"
-                  >Gamersaurus</a
-                >
-              </h5>
-              <p class="card-text">
-                Utilizing the IGDB API, Gamersaurus is a video game web app
-                where users can search for games, see the latest trends, and
-                save personal libraries. Designed mobile UI/UX, built API
-                connection, and developed app functionality.
-              </p>
-              <i
-                >Technologies: HTML, CSS, Javascript, JSX, MongoDb, Express,
-                React, Node, Heroku, Git, IGDB API, UI Kit Framework</i
-              >
-              <a
-                href="https://github.com/amboffman/gamersaurus"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                View on Github
-              </a>
+        <a name="portfolio"></a>
+        <h3 class="text-center font-weight-bold mt-3 mb-3">Featured Projects</h3>
+        <hr>
+        <div class="projects row mb-3">
+            <div class="col-12 col-lg-4">
+                <div class="project card mb-3">
+                    <img class="card-img-top project-photo" src="assets/moodies.png" alt="project-1">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://sylhuynh.github.io/moodies/"
+                                target="_blank">Moodies</a></h5>
+                        <p class="card-text">An application using APIs to recommend local restaurants based on the user’s current mood. Built the algorithm that converted the user’s mood to food. As well as the functionality to generate the card and reveal info upon a match. 
+                        </p>
+                            <i>Technologies: HTML, CSS, Javascript, Jquery, Ajax, Zomato API, Git, OpenWeather API, Materialize Framework</i>
+                        <a href="https://github.com/sylhuynh/moodies" class="btn btn-primary" target="_blank"> View on
+                            Github </a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="col-12 col-lg-4">
+                <div class="project card mb-3">
+                    <img class="card-img-top project-photo" src="assets/password-generator.png" alt="project-2">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://the-wanderful-app.herokuapp.com/"
+                                target="_blank">Wanderful </a></h5>
+                        <p class="card-text">A destination logging application using the Google Maps and Google Places APIs to track places users have been or wish to visit. Designed the front-end ui and developed the API connections.</p>
+                        <i>Technologies: HTML, CSS, Javascript, Jquery, Express, Sequelize, MySQL, JawsDB, Heroku, Git, Google Maps API, Google Places API, UI Kit Framework</i>
+                        <a href="https://github.com/sylhuynh/wanderful" class="btn btn-primary"
+                            target="_blank"> View on Github </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="project card mb-3">
+                    <img class="card-img-top project-photo" src="assets/weather-dashboard.png" alt="project-3">
+                    <div class="card-body">
+                        <h5 class="card-title"> <a href="https://gamersaurus.herokuapp.com/"
+                                target="_blank">Gamersaurus</a></h5>
+                        <p class="card-text">Utilizing the IGDB API, Gamersaurus is a video game web app where users can search for games, see the latest trends, and save personal libraries. Designed mobile UI/UX, built API connection, and developed app functionality.</p>
+                        <i>Technologies: HTML, CSS, Javascript, JSX, MongoDb, Express, React, Node, Heroku, Git, IGDB API, UI Kit Framework</i>
+                        <a href="https://github.com/amboffman/gamersaurus" class="btn btn-primary"
+                            target="_blank"> View on Github </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="project card mb-3">
-          <img
-            class="card-img-top project-photo"
-            src="assets/wanderful.png"
-            alt="project-2"
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://the-wanderful-app.herokuapp.com/" target="_blank"
-                >Wanderful
-              </a>
-            </h5>
-            <p class="card-text">
-              A destination logging application using the Google Maps and Google
-              Places APIs to track places users have been or wish to visit.
-              Designed the front-end ui and developed the API connections.
-            </p>
-            <i
-              >Technologies: HTML, CSS, Javascript, Jquery, Express, Sequelize,
-              MySQL, JawsDB, Heroku, Git, Google Maps API, Google Places API, UI
-              Kit Framework</i
-            >
-            <a
-              href="https://github.com/sylhuynh/wanderful"
-              class="btn btn-primary"
-              target="_blank"
-            >
-              View on Github
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="project card mb-3">
-          <img
-            class="card-img-top project-photo"
-            src="assets/moodies.png"
-            alt="project-1"
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://sylhuynh.github.io/moodies/" target="_blank"
-                >Moodies</a
-              >
-            </h5>
-            <p class="card-text">
-              An application using APIs to recommend local restaurants based on
-              the user’s current mood. Built the algorithm that converted the
-              user’s mood to food. As well as the functionality to generate the
-              card and reveal info upon a match.
-            </p>
-            <i
-              >Technologies: HTML, CSS, Javascript, Jquery, Ajax, Zomato API,
-              Git, OpenWeather API, Materialize Framework</i
-            >
-            <a
-              href="https://github.com/sylhuynh/moodies"
-              class="btn btn-primary"
-              target="_blank"
-            >
-              View on Github
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- contact section -->
     <section class="container-fluid" id="contact-me">
-      <a name="contact"></a>
-      <h3 class="text-center font-weight-bold mt-3 mb-3">Let's Connect!</h3>
-      <div class="row justify-content-center">
-        <a
-          href="assets/documents/Anthony-Boffman-Resume-Full-Stack.pdf"
-          class="btn btn-light"
-          target="_blank"
-        >
-          View Resume
-        </a>
-      </div>
-      <br />
-      <div class="d-flex">
-        <ul class="list-inline mx-auto">
-          <li class="list-inline-item">
-            <a href="https://github.com/amboffman" target="_blank">
-              <img class="icon" id="github" src="assets/github-icon.png" />
+        <a name="contact"></a>
+        <h3 class="text-center font-weight-bold mt-3 mb-3">Let's Connect!</h3>
+        <div class="row justify-content-center">
+            <a href= "assets/documents/Anthony-Boffman-Resume-Full-Stack.pdf" class="btn btn-light"
+                 target="_blank"> View Resume
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              href="https://www.linkedin.com/in/anthonyboffman/"
-              target="_blank"
-            >
-              <img class="icon" id="linkedin" src="assets/linkedin-icon.png" />
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <br>
+        <div class="d-flex">
+            <ul class="list-inline mx-auto">
+                <li class="list-inline-item">
+                    <a href="https://github.com/amboffman" target="_blank">
+                        <img class="icon" id="github" src="assets/github-icon.png">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/anthonyboffman/" target="_blank">
+                        <img class="icon" id="linkedin" src="assets/linkedin-icon.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-      <!-- <form>
+        <!-- <form>
             <div class="form-row">
                 <div class="col">
                     <div class="form-group">
@@ -236,5 +163,6 @@
     <!-- <footer>
         <small>Site made by Anthony Boffman</small>
     </footer> -->
-  </body>
+</body>
+
 </html>
