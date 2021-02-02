@@ -32,7 +32,9 @@ body{
     text-align: center;
 }
 .project-photo{
-    max-height: 180px;
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 20px;
 }
 footer{
     background-color:gray;
